@@ -635,7 +635,9 @@
             display: flex;
             padding: rem(139) 0px rem(140) 0px;
             justify-content: center;
-            flex-direction: column;
+		 @media (max-width:em(900)){
+flex-direction: column;
+}
       }
 
       // .achievements__body
