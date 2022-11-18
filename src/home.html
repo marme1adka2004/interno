@@ -5,20 +5,25 @@
 	"title":"Главная"
 	})
 	<body>
+		@@include('_header.htm',{})
 		<div class="wrapper">
-			@@include('_header.htm',{})
-				<main class="page">
+			
+				<main class="main">
+					<div class="main__page page">
 				<div class="page__container">
 					<div class="page__body">
 					<h1 class="page__title">Let's Create Your<br> Dream Interior</h1>
 					<div class="page__subtitle">The world needs innovators and problem solvers who turn<br>challenges into greater opportunities.</div>
-					<button type="submit" class="page__button button">Get Started
+					<div class="page__btn">
+					<button type="submit" class="button">Get Started
 						<img src="img/arrow.svg" alt="" class="page__arrow">
 					</button>
 					</div>
 					</div>
+					</div>
 					<div class="page__image _ibg"><img src="img/background.jpg" alt=""></div>
-				</main>
+				</div>
+			
 				<section class="about">
 					<div class="about__container">
 						<div class="about__items items-about">
@@ -68,9 +73,11 @@
 								<div class="connect-design__note">Call Us Anytime</div>
 							</div>
 							</div>
-							<button type="submit" class="connect-design__button button">Get Free Estimate
+							<div class="connect-design__btn">
+							<button type="submit" class="button">Get Free Estimate
 								<img src="img/arrow.svg" alt="" class="connect-design__arrow">
 							</button>
+						</div>
 							</div>
 							<div class="connect-design__img">
 								<img src="img/design.jpg" alt="">
@@ -134,6 +141,7 @@
 						</div>
 					</div>
 				</section>
+				<section class="blogs">
 				<section class="projects">
 					<div class="projects__container">
 						<div class="projects__title title">Recent Projects</div>
@@ -237,7 +245,8 @@
 							<div class="items-blogs__image">
 								<img src="img/blogs/kitchen.jpg" alt="">								
 								</div>
-								<button class="items-blogs__btn">Kitchen Design</button>
+								<div class="items-blogs__btn">
+								<button class="items-blogs__inside-btn">Kitchen Design</button></div>
 							<div class="items-blogs__title">Residential Interior Designer In New York, USA</div>
 							<div class="items-blogs__info">
 							<div class="items-blogs__date">November 23, 2021</div>
@@ -250,7 +259,8 @@
 							<div class="items-blogs__image">
 								<img src="img/blogs/living.jpg" alt="">								
 								</div>
-								<button class="items-blogs__btn">Living Room</button>
+								<div class="items-blogs__btn">
+								<button class="items-blogs__inside-btn">Living Room</button></div>
 							<div class="items-blogs__title">How To Choose The Best Wall Art & Decor House?</div>
 							<div class="items-blogs__info">
 							<div class="items-blogs__date">November 23, 2021</div>
@@ -263,7 +273,8 @@
 							<div class="items-blogs__image">
 								<img src="img/blogs/minimalist.jpg" alt="">								
 								</div>
-								<button class="items-blogs__btn">Minimalist Interior</button>
+								<div class="items-blogs__btn">
+								<button class="items-blogs__inside-btn">Minimalist Interior</button></div>
 							<div class="items-blogs__title">Tips To Increase The Interior Value Of Your House</div>
 							<div class="items-blogs__info">
 							<div class="items-blogs__date">November 23, 2021</div>
@@ -276,7 +287,8 @@
 							<div class="items-blogs__image">
 								<img src="img/blogs/kitchen2.jpg" alt="">								
 								</div>
-								<button class="items-blogs__btn">Kitchen Design</button>
+								<div class="items-blogs__btn">
+								<button class="items-blogs__inside-btn">Kitchen Design</button></div>
 							<div class="items-blogs__title">Best Solution For Any Office & Business Interior</div>
 							<div class="items-blogs__info">
 							<div class="items-blogs__date">November 23, 2021</div>
@@ -289,7 +301,8 @@
 							<div class="items-blogs__image">
 								<img src="img/blogs/living2.jpg" alt="">								
 								</div>
-								<button class="items-blogs__btn">Living Room</button>
+								<div class="items-blogs__btn">
+								<button class="items-blogs__inside-btn">Living Room</button></div>
 							<div class="items-blogs__title">Get Solution For Building Construction Work</div>
 							<div class="items-blogs__info">
 							<div class="items-blogs__date">November 23, 2021</div>
@@ -302,7 +315,8 @@
 							<div class="items-blogs__image">
 								<img src="img/blogs/minimalist2.jpg" alt="">								
 								</div>
-								<button class="items-blogs__btn">Minimalist Interior</button>
+								<div class="items-blogs__btn">
+								<button class="items-blogs__inside-btn">Minimalist Interior</button></div>
 							<div class="items-blogs__title">Attain The Best Finish For The Kitchen Cabinets</div>
 							<div class="items-blogs__info">
 							<div class="items-blogs__date">November 23, 2021</div>
@@ -316,18 +330,21 @@
 				<section class="question">
 					<div class="question__container">
 						<div class="question__body">
-						<h1 class="question__title">Wanna join the interno?</h1>
+						<h1 class="question__title"><span>Wanna</span> join the interno?</h1>
 						<div class="question__subtitle">Contact Us & Get a Free Consultation</div>
-						<button type="submit" class="question__btn">Connect With us
+						<div class="question__btn">
+						<button type="submit" class="question__btn-light">Connect With us
 							<img src="img/blackarrow.svg" alt="" class="question__arrow">
 						</button>
 						</div>
+						</div>
 					</div>
 				</section>
+				
+			</main>
 				</div>
-			</body>
+			
 			@@include('_footer.htm',{})
-		</div>
 		<!-- @@include('_popup.htm',{}) -->
 		@@include('_js.htm',{})
 	</body>
